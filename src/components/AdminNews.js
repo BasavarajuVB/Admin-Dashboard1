@@ -298,6 +298,7 @@ const AdminNews = () => {
               </div>
               <div className="form-group">
                 <label htmlFor="modalNewsImageUrl">Image URL</label>
+                <p>Go to https://postimages.org/ and upload image select direct link</p>
                 <input
                   type="text"
                   id="modalNewsImageUrl"

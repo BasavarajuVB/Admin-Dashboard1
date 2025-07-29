@@ -4,14 +4,14 @@ import { getAuth } from 'firebase/auth';
 import { getDatabase } from 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBElOx48Lzc6AQaf4CdexsOgaEPEkgTIMI",
-  authDomain: "fruitswipe-01.firebaseapp.com",
-  databaseURL: "https://fruitswipe-01-default-rtdb.firebaseio.com",
-  projectId: "fruitswipe-01",
-  storageBucket: "fruitswipe-01.appspot.com",  // ← use ".appspot.com" not ".storage.app"
-  messagingSenderId: "861482168289",
-  appId: "1:861482168289:web:9da3b3cbc93a455f5faca0",
-  measurementId: "G-KGYC5JJ7Y0"
+  apiKey: "AIzaSyAEZMcO5Gaq6FKEo_Za2tNHHvfKsDlGTzA",
+  authDomain: "web3news-dca1f.firebaseapp.com",
+  databaseURL: "https://web3news-dca1f-default-rtdb.firebaseio.com",
+  projectId: "web3news-dca1f",
+  storageBucket: "web3news-dca1f.firebasestorage.app",
+  messagingSenderId: "501919675960",
+  appId: "1:501919675960:web:85868df5ee8ef1a77858cd",
+  measurementId: "G-NFVZBFX2QE"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -19,3 +19,5 @@ const auth = getAuth(app);
 const database = getDatabase(app);
 
 export { app, auth, database };
+
+

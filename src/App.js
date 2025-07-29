@@ -5,12 +5,14 @@ import Login from "./components/Login";
 import Home from "./components/Home";
 import AdminNews from "./components/AdminNews";
 import AdminTask from "./components/AdminTask";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
 
-  return (
+   return (
     <Router>
+      {loggedIn && <Navbar onLogout={() => setLoggedIn(false)} />}
       <Routes>
         {!loggedIn ? (
           <Route path="*" element={<Login onLogin={() => setLoggedIn(true)} />} />
